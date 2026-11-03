@@ -1,0 +1,90 @@
+{
+  "project": "E-Commerce Web Application Development Tasks",
+  "tasks": [
+    {
+      "id": "FRONT-1",
+      "category": "Front-End Development",
+      "title": "Product Catalog & Browsing Page",
+      "subtasks": [
+        "Implement product grid/list view displaying image, title, price, and category.",
+        "Implement client-side search bar for instant keyword searching.",
+        "Build category filter sidebar/dropdown.",
+        "Add dynamic price range filter (slider or min/max input fields)."
+      ]
+    },
+    {
+      "id": "FRONT-2",
+      "category": "Front-End Development",
+      "title": "Shopping Cart Module",
+      "subtasks": [
+        "Create interactive shopping cart (add/remove items, update quantities).",
+        "Build persistent cart state (session/local storage or user profile backend sync).",
+        "Calculate subtotal, taxes, shipping fee, and grand total in real time."
+      ]
+    },
+    {
+      "id": "FRONT-3",
+      "category": "Front-End Development",
+      "title": "Checkout Flow",
+      "subtasks": [
+        "Design step-by-step checkout page (shipping address, contact details, payment selection).",
+        "Implement Cash on Delivery (COD) radio option.",
+        "Integrate online payment gateway frontend UI (e.g., Stripe Elements, PayPal SDK)."
+      ]
+    },
+    {
+      "id": "BACK-1",
+      "category": "Back-End Development",
+      "title": "Product & Inventory Management API",
+      "subtasks": [
+        "Create GET /api/products endpoint supporting pagination, search queries, category filters, and price ranges.",
+        "Create schema for products, categories, and inventory stock control."
+      ]
+    },
+    {
+      "id": "BACK-2",
+      "category": "Back-End Development",
+      "title": "Cart & Order Processing Engine",
+      "subtasks": [
+        "Create POST /api/orders to process checkout data, validate stock availability, and reserve inventory.",
+        "Build COD order handler (status: Pending Approval / Processing).",
+        "Implement backend payment gateway integration (webhook listeners for payment success/failure)."
+      ]
+    },
+    {
+      "id": "BACK-3",
+      "category": "Back-End Development",
+      "title": "Email Notification System",
+      "subtasks": [
+        "Set up email service integration (e.g., SendGrid, AWS SES, or Nodemailer).",
+        "Create HTML template for Order Confirmation (itemized invoice, total price, delivery address).",
+        "Create dynamic HTML templates for Order Status updates (e.g., Shipped, Out for Delivery, Delivered).",
+        "Trigger email dispatcher on order creation and whenever order status changes in the backend database."
+      ]
+    },
+    {
+      "id": "DB-1",
+      "category": "Database Design & Schema",
+      "title": "Database Tables / Collections",
+      "subtasks": [
+        "Users (Customer profiles, contact details, shipping addresses)",
+        "Categories (Category names, IDs, metadata)",
+        "Products (Name, description, price, stock, category_id, images)",
+        "Orders (Order ID, customer details, payment method, payment status, fulfillment status, total amount)",
+        "OrderItems (Order ID, product ID, quantity, unit price)"
+      ]
+    },
+    {
+      "id": "QA-1",
+      "category": "Testing & Quality Assurance",
+      "title": "Functional & Integration Testing",
+      "subtasks": [
+        "Test combinations of search queries, category filters, and price range sliders.",
+        "Verify cart accuracy when adding, modifying, or removing items across session refreshes.",
+        "Test end-to-end checkout with Cash on Delivery option.",
+        "Test online payment processing in Sandbox/Test mode (success, failed, and canceled transactions).",
+        "Verify transactional emails are properly formatted and delivered to customer inbox/spam."
+      ]
+    }
+  ]
+}
